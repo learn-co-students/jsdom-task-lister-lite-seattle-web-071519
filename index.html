@@ -7,16 +7,26 @@
 </head>
 <body>
   <div id="main-content">
-    <h1>Task Lister Lite™️</h1>
+    <h1>Task Luster Lite™️</h1>
 
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <label for="date-do">Do Date:</label>
+      <input type="date" id="date-do" name="date-do" value="2019-08-27">
+
+      <label for="urgency">Urgency:</label>
+      <select name="urgency">
+        <option value="low">Not Great</option>
+        <option value="medium">Ok Let's go'</option>
+        <option value="high">YOOO MAN</option>
+      </select>
+
+      <input type="submit"  value="Create New Task">
     </form>
 
     <div id="list">
-      <h2>My Todos</h2>
+      <h2>Bang List</h2>
       <ul id="tasks">
       </ul>
     </div>
